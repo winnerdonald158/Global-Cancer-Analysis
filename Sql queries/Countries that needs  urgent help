@@ -1,0 +1,18 @@
+                                    Countries needing urgent help
+Identify top 10 countries needing urgent intervention 
+
+Query
+SELECT
+  country_name,
+  MAX(possible_cancer_cases)highest_cancer_cases,
+  MIN(coverage) low_coverage
+FROM cancer_data
+GROUP BY country_name
+ORDER BY highest_cancer_cases DESC
+LIMIT 10;
+
+Insight
+There are some countries with high deaths and low coverage rate , which makes them at higher risk.
+
+Recommendation
+We should Focus resources and support on these countries first.
