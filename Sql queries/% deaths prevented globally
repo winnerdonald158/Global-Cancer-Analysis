@@ -1,0 +1,19 @@
+                                                        % deaths prevented globally
+                              
+                 Business question
+What % of total deaths could be prevented globally? 
+
+              Query
+SELECT
+  SUM(possible_cancer_deaths)AS total_cases,
+  SUM(deaths_prevented) AS total_prevented,
+  ROUND(
+	(SUM(deaths_prevented) / SUM(possible_cancer_deaths)) * 100,2 
+	)AS percentage_prevented
+FROM cancer_data;
+
+                 Insight
+This percentage shows how many lives  we are saving globally.
+
+            Recommendation
+Tracking our metrics should be done every year, our metrics should improve if our intervention is working 
