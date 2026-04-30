@@ -1,0 +1,18 @@
+                              High cases with low coverage
+
+             Business question
+Which countries have high cancer cases but low prevention coverage? (CRITICAL) 
+
+             Query
+SELECT
+	country_name,
+	MAX(possible_cancer_cases)high_cases,
+	MIN(coverage)low_coverage
+FROM cancer_data
+GROUP BY country_name;
+
+Insight
+Some countries have many cancer cases but poor healthcare coverage  and this is very dangerous.
+
+Recommendation
+These countries should be top priority for intervention
