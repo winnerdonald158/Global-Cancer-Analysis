@@ -1,0 +1,18 @@
+                          Average deaths prevented per region
+
+                 Business questions
+What is the average deaths prevented per region? 
+
+                     Query
+SELECT
+  region,
+  ROUND(AVG(deaths_prevented),2)AVG_deaths_prevented
+FROM cancer_data
+GROUP by region
+ORDER BY AVG_deaths_prevented DESC;
+
+Insight
+This helps compare performance efficiency of each region.
+
+Recommendation
+Regions with low averages deaths prevented may need better implementation, not just more funding.
