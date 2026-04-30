@@ -1,0 +1,16 @@
+          Business question
+What impact does healthcare coverage have on cancer deaths prevented?
+            Query
+SELECT
+  coverage,
+  ROUND(AVG(deaths_prevented),2)Avg_death
+FROM cancer_data
+WHERE deaths_prevented > 0
+GROUP BY coverage
+ORDER BY coverage DESC;
+
+     Insight
+This shows that as healthcare coverage increases, more lives are saved.
+
+  Recommendation
+There should be an increase in healthcare service,which will help reduce or prevent cancer death
