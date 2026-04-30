@@ -1,0 +1,15 @@
+                 Business questions
+Compare high-income vs low-income countries in deaths prevented 
+
+                  Query
+SELECT
+  income_group,
+  deaths_prevented
+FROM cancer_data
+WHERE income_group IN('High income','Low income')
+AND deaths_prevented >  0
+GROUP BY income_group,deaths_prevented
+ORDER BY deaths_prevented;
+
+Recommendation
+There is a need to support low-income countries with funding and healthcare programs
