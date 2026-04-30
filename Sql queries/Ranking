@@ -1,0 +1,30 @@
+                            Ranking
+
+                Business query
+Rank countries by: 
+Risk (cases)
+Prevention gap 
+
+            Query
+SELECT
+	country_name,
+	MAX(possible_cancer_cases)high_cases,
+	RANK() OVER (ORDER BY MAX(possible_cancer_cases)DESC)ranked_cases
+FROM cancer_data
+GROUP BY country_name;
+
+             QUERY
+SELECT
+	country_name,
+	MAX(cancer_prevented) - MAX(deaths_prevented)gaps,
+	RANK() OVER(ORDER BY MAX(cancer_prevented) - MAX(deaths_prevented)DESC)Prevented_gap
+FROM cancer_data
+GROUP BY country_name;
+
+
+Insight
+The prevention gap shows how many people are still dying when they could have been saved.
+
+ Recommendation
+Countries with the largest gap need urgent investment in healthcare systems.
+
