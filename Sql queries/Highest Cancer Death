@@ -1,0 +1,17 @@
+                                            Highest Cancer Death
+                   Business questiom
+Which countries have the highest possible cancer deaths? 
+
+          Query
+SELECT
+  country_name,
+  MAX(possible_cancer_deaths) AS highest_death
+FROM cancer_data
+GROUP BY country_name
+ORDER BY highest_death DESC;
+
+           Insight
+This shows the country with the highest number of death cases,which means in those high death country there are still people that are at risks.
+
+     Recommendation
+We should focus on early test, detection and awareness of cancer in these countries.
