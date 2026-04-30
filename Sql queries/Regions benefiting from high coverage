@@ -1,0 +1,19 @@
+                                                  Regions benefiting from coverage
+
+                     Business Question
+Which regions benefit the most from increased coverage? 
+              
+                       Query
+           SELECT 
+             region,
+             ROUND(AVG(coverage),2)Avg_coverage,
+             SUM(deaths_prevented) AS total_benefit
+           FROM cancer_data
+           GROUP BY region
+            ORDER BY total_benefit DESC;
+
+                       Insight
+Regions with higher total deaths prevented are already seeing the benefits of better healthcare systems.
+
+                  Recommendation
+We need to Improve our healthcare systems in weaker regions.
