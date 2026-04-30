@@ -1,0 +1,19 @@
+                           Lowest healthcare coverage
+
+                Business question
+Which regions have the lowest healthcare coverage? 
+
+             Query
+SELECT
+country_name,
+MIN(coverage)lowest_coverage
+FROM cancer_data
+GROUP BY country_name
+ORDER BY lowest_coverage;
+
+             Insight 
+This shows that regions with low coverage are likely missing out on early diagnosis and timely treatment, which increases preventable deaths.
+
+              Recommendation
+There is a need to target these regions to inccrease mobile clinics, subsidized care, and awareness campaigns.
+
