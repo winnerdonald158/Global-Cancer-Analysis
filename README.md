@@ -13,7 +13,7 @@ iii. To  Highlight opportunities to reduce preventable deaths
 Postgresql
 Power BI
 
-Skills Demonstrated
+          Skills Demonstrated;
 SQL aggregation (SUM, AVG, GROUP BY)
 Window functions (RANK)
 Data modeling
@@ -22,7 +22,7 @@ Data visualization
 Dashboard storytelling
 Health analysis
 
-Health Objectives
+                Health Objectives;
 This project understand global cancer burden (cases & deaths)
 This also identify countries with high deaths and low coverage
 This also Compare high-income group vs low-income group
@@ -31,7 +31,7 @@ This identify regions that benefit most from improved coverage
 This also provide actionable insights for better healthcare planning
  
  
- Repository Structure
+               Repository Structure;
 sql-queries/ → Business questions, SQL queries, insights
 dashboard/ → Power BI dashboard screenshots
 README.md → Project documentation
@@ -55,7 +55,7 @@ Regional Insights;
 Certain regions show strong improvement over time while others still left behind due to healthcare limitations
 
 
-Dashboard Overview
+             Dashboard Overview;
 Global Cancer Analysis Dashboard
 This Shows:
 Total cancer cases
@@ -66,11 +66,11 @@ Global distribution of deaths (map)
 Trends of prevention over time (line chart)
 
 This dashboard helps identify:
-Where deaths are highest
-Which regions are improving
+Where deaths are highest,
+Which regions are improving,
 Where intervention is needed most
 
-Technical Approach
+                Technical Approach;
 🔹 Data Processing
 Prepared dataset for SQL and Power BI
 🔹 SQL Analysis
@@ -82,7 +82,7 @@ Built interactive dashboard
 Created DAX measures (Total Cases, Deaths Prevented, Average Coverage,Total countries)
 Designed visuals for clear communication
 
-Business Recommendations
+                Health Recommendations;
 1. Improve Healthcare Coverage;
 Governments and organizations should invest in expanding healthcare access, especially in low-income countries
 
@@ -96,7 +96,7 @@ Early detection and screening programs can significantly reduce deaths
 
 5.Healthcare policies should be guided by data to maximize impact
 
- Key Takeaway
+                    Key Takeaway
 This project shows that many cancer deaths are preventable, but gaps in healthcare coverage continue to put millions of lives at risk.
 
  Connect With Me
